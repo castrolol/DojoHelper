@@ -1,0 +1,7 @@
+node_modules
+app
+dist
+DojoHelper.app
+.editorconfig
+.gitattributes
+.jshintrc

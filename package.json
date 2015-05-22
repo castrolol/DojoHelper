@@ -1,0 +1,51 @@
+{
+  "name": "sensei",
+  "productName": "Sensei",
+  "version": "0.0.0",
+  "description": "My extraordinary app",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "castrolol/sensei",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "github.com/castrolol"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "gulp build && electron .",
+    "build": "electron-packager . DojoHelper --prune --asar --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.git"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app"
+  ],
+  "devDependencies": {
+    "electron-packager": "^3.3.0",
+    "electron-prebuilt": "^0.25.2",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-less": "^3.0.3",
+    "gulp-plumber": "^1.0.0",
+    "gulp-react": "^3.0.1",
+    "gulp-watch": "^4.2.4",
+    "react": "^0.13.3"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "material-ui": "^0.7.5",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "react-tap-event-plugin": "^0.1.6",
+    "react-winjs": "^0.3.0",
+    "through2": "^0.6.5"
+  }
+}

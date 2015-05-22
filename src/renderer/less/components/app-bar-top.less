@@ -1,0 +1,38 @@
+.win-app-bar {
+
+	height: 48px;
+	background-color: #131313;
+	-webkit-app-region: drag;
+	
+
+	&:active {
+		cursor: grabbing;
+	}
+
+	* {
+		-webkit-app-region: no-drag;
+
+	}
+
+
+
+	.win-app-bar-button {
+		width: 48px;
+		float: right;
+	}
+
+	.win-app-bar-buttons {
+		height: 48px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	h2.win-app-bar-title {	
+		display: inline-block;
+  		margin: 5px;
+  		-webkit-app-region: drag;
+		-webkit-user-select: none;
+	}
+
+}
